@@ -61,9 +61,21 @@ header i{
     width: 15%;
     text-align: center;
 }
- .card img{
-    position: relative;
- }
+.label-green{
+    position: absolute;
+    bottom: 20%;
+    background-color: green;
+    padding: 5px;
+    color: white; 
+    font-weight: bold;
+    width: 30%;
+    text-align: center;
+}
+
+.label + .label-green{
+    left: 16%;
+}
+ 
 .row {
     display: flex;
     gap: 30px;
