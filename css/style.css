@@ -20,6 +20,21 @@ body {
 
 
 /* Stile main */
+.row {
+    display: flex;
+    gap: 10px;
+    background-color: aqua;
+    width: 100%;
+}
 
+.card {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    width: calc(100%/3);
+    background-color: blue;
+    height: 250px;
+    border: solid 1px black;
+}
 
 /* Stile footer */
