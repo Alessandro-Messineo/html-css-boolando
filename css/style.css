@@ -21,7 +21,7 @@ header{
     background-color: rgb(255, 105, 0);
     position: fixed;
     width: 100%;
-
+    z-index: 1;
 }
 
 .flex{
@@ -50,6 +50,20 @@ header i{
 .pad-top{
     padding-top: 80px;
 }
+
+.label{
+    position: absolute;
+    bottom: 20%;
+    background-color: red;
+    padding: 5px;
+    color: white; 
+    font-weight: bold;
+    width: 15%;
+    text-align: center;
+}
+ .card img{
+    position: relative;
+ }
 .row {
     display: flex;
     gap: 30px;
@@ -59,11 +73,32 @@ header i{
 .card {
     width: calc(100%/3);
     margin: 30px 0;
+    position: relative;
+}
+
+.span-red{
+    color: red;
+}
+
+.span-line{
+    text-decoration: line-through;
 }
 
 .card img {
     width: 100%;
 }
+/* Hover immagini */
+.card > img:nth-child(even){
+    display: none;
+}
+.card:hover >img:nth-child(even){
+    display: block;
+}
+.card:hover >img:nth-child(odd){
+    display: none;
+}
+
+
 /* Stile footer */
 footer{
     background-color: black;
